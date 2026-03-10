@@ -1,0 +1,385 @@
+html {
+    box-sizing: border-box
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+@media (376px <= width <= 2556px) {
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        Font-size: 15px;
+        width: 1440px;
+        height: 800px;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: transparent;
+        /* background-image: url(/Users/jorge.bucio.299356/Desktop/Social_Proof_Section_Starter/design/desktop-design.jpg);  */
+        background: url(../images/bg-pattern-top-desktop.svg) top left no-repeat,
+                    /* repeating-linear-gradient(232deg, #502050 80%, #EE68A4), */
+                    url(../images/bg-pattern-bottom-desktop.svg) right -19%/ 76% no-repeat,
+                    repeating-linear-gradient(75deg, white, #EE68A4 80%, #502050 45px);
+    }
+
+    h1 {
+        font-size: 50px;
+        letter-spacing: 3px;
+        word-spacing: -7px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-weight: 400;
+        margin-top: 0;
+        line-height: 1em; 
+        margin-bottom: 50px;
+    }
+
+    strong {
+        font-size: 54px;
+    }
+
+    /* ========================================= Global Styles ========================================= */
+
+    body, h1, p, .testimonials, .userName, .paragraph, .rightSide, .top, .bottom, .userImgName, .testimonialOne, .testimonialTwo, .testimonialThree, .rating  {
+        display: flex;
+    }
+
+    body, h1, p, .testimonials, .userName, .paragraph, .rightSide {
+        flex-direction: column; 
+    }
+
+    .testimonialOne, .testimonialTwo, .testimonialThree {
+        align-items: center;
+    }
+
+    .testimonialOne, .testimonialTwo, .testimonialThree, .testimony {
+        margin-left: 44px;
+        margin-top: 48px;
+    }
+
+    .name, .testimony {
+        color: white;
+        font-weight: lighter;
+    }
+
+    .bottom, .testimonials, .rating {
+        justify-content: space-evenly;
+    }
+
+    .rightSide, .top {
+        align-items: center;
+    }
+
+    .paragraph, .verifiedUser, .testimony {
+        font-weight: 400;
+    }
+
+    .stars {
+        margin-left: -22px;
+    }
+
+    .ratingOne, .ratingThree {
+        margin-right: 40px;
+    }
+
+    /* ============================================ Common Styles ============================================= */
+
+    .top {
+        color: #502050;
+        margin: 74px 0px 0px 165px; 
+    }
+
+    .leftSide {
+        font-size: 3rem;
+        width: 50%;  
+    }
+
+    .firstLine {
+        letter-spacing: 2px;
+    }
+
+    .secondLine {
+        letter-spacing: 1px;
+    }
+
+    .thirdLine {
+        letter-spacing: 2px;
+    }
+
+    .paragraph, .query {
+        font-weight: 500;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        color: #937B92;
+        line-height: 24px;
+        margin-top: -7px;
+    }
+
+    .rightSide {
+        font-size: 1em;
+        width: 90%;
+    }
+
+    #rTop {
+        align-self: flex-start;
+        margin-left: 112px;
+    }
+
+    #rMiddle {
+        margin-left: -52px;
+    }
+
+    #rBottom {
+        margin-right: -40px;
+    }
+
+    .rating {
+        line-height: 3.5em;
+        width: 55%;
+        background-color: #F7F2F7;
+        border-radius: 8px;
+        margin: 10px 0px 4px 0px;
+    }
+
+    .stars{
+        margin-top: 2px;
+    }
+
+    .stars img {
+        margin-right: 5px;
+    }
+
+    .bottom {
+        margin: 22px 130px;
+    
+    }
+
+    /* ======================================= Top Half Section Styles ========================================= */
+
+    .testimonials {
+        background-color: #502050;
+        border-radius: 8px;
+        padding: 0px;
+        margin: 0px;
+        width: 352px;
+        height: 238px;
+        align-items: flex-start;
+    }
+
+    .userName {
+        margin-left: 26px;
+    }
+
+    .userMiddle {
+        align-self: center;
+        margin-top: 2px;
+        margin-left: -6px;
+    }
+
+    .userRight {
+        margin-top: 32px;
+        margin-left: -6px;
+    }
+
+    .userImg {
+        border-radius: 50%;
+        width: 22%;
+    }
+
+    .verifiedUser {
+        color: #EE68A4;
+        margin-top: 2px;
+    }
+
+    .testimony {
+        margin-top: 24px;
+        line-height: 1.5em;
+        font-size: 14.5px;
+    }
+}
+/* ======================================== Bottom Half Section Styles ============================================ */
+
+@media screen and (max-width: 375px) {
+    body {
+        width: 99.9%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+        Font-size: 15px;
+        width: 375px;
+        height: 730px;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        background-image: url(/Users/jorge.bucio.299356/Desktop/Social_Proof_Section_Starter/design/mobile-design.jpg); 
+        /* background: url(../images/bg-pattern-top-desktop.svg) left 0%/ 100% no-repeat,
+                    url(../images/bg-pattern-bottom-desktop.svg) right 400%/ 200% no-repeat; */
+    }
+
+    .template {
+        width: 375px;
+        height: 730px;
+        opacity: 30%;
+    }
+
+    strong {
+        font-weight: lighter;
+        font-size: 1.5em;
+        letter-spacing: -2px;
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 29px;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+        line-height: 33px;
+        margin-top: 76px;
+        margin-left: -20px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .stars img {
+        margin-right: 4px;
+    }
+    
+    .top {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        width: 99% ;
+        margin: 0;
+        padding: 0;
+    }
+
+    .leftSide {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        width: 95%;
+        margin: 0px 0px 0px 0px;
+        padding: 0px;
+
+    }
+
+    .paragraph {
+        margin: 0px 0px 0px 6px;
+        letter-spacing: 1px;
+        line-height: 25px;
+        width: 99%;
+        font-size: 11px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .query {
+        margin: 2px 2px 0px -10px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .rating {
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .rating {
+        line-height: 2em;
+        background-color: #F7F2F7;
+        border-radius: 8px;
+        margin: 66px 0px -32px 0px;
+        opacity: 40%;
+    }
+
+    .ratingOne, .ratingTwo, .ratingThree {
+        font-size: 15px;
+    }
+
+    .rightSide, .bottom  {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 98%;
+    }
+
+    .bottom {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 88px;
+    }
+
+    .thirdLine {
+        letter-spacing: 1px;
+    }
+
+    .testimonials {
+        background-color: #502050;
+        border-radius: 8px;
+        padding: 0px;
+        margin: 0px 0px 0px 0px;
+        width: 72%;
+        height: 249px;
+        align-items: flex-start;
+        opacity: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .userName {
+        margin-left: 26px;
+        float: right;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .userMiddle {
+        align-self: center;
+        margin-top: 2px;
+        margin-left: -6px;
+    }
+
+    .userRight {
+        margin-top: 32px;
+        margin-left: -6px;
+    }
+
+    .userImg {
+        border-radius: 50%;
+        width: 15%;
+    }
+
+    .userImgName {
+        display: flex;
+        align-items: center;
+    }
+
+    .verifiedUser {
+        color: #EE68A4;
+        margin-top: 2px;
+    }
+
+    .testimony {
+        margin-top: 24px;
+        line-height: 1.5em;
+        font-size: 14.5px;
+    }
+}

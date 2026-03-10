@@ -1,0 +1,205 @@
+body {
+    background: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    padding: 5rem;
+    height: 100vh;
+    }
+    
+    #wrapper {
+    font-family: Arial;
+    justify-content: center;
+    /width: 1440px;/
+    /height: 800px;/
+    }
+    
+    
+    /==========================/
+    /Common Styles/
+    /==========================/
+    .d-flex {
+    display: flex;
+    }
+    
+    .h1Color, .rating {
+    color: rgb(80, 32, 80);
+    }
+    
+    .ratingReviews, .pColor {
+    font-size: 15px;
+    }
+    
+    .ratingReviews, .profilePic {
+    align-items: center;
+    }
+    
+    #topBox, #bottomBox {
+    justify-content: space-between;
+    }
+    
+    #box2, #anneBox {
+    top: 2rem;
+    }
+    
+    #box2, #topReview, #middleReview, #bottomReview, #coltonBox, #ireneBox, #anneBox {
+    position: relative;
+    }/End Of Common Styles/
+    
+    
+    /==========================/
+    /Start Of Box 1/
+    /==========================/
+    #box1 {
+    width: 30%;
+    }
+    
+    .h1Color {
+    font-size: 50px;
+    } /End Of Box 1/
+    
+    
+    /==========================/
+    /* Start Of Box 2*/
+    /==========================/
+    #box2 {
+    width: 35%;
+    }
+    
+    .ratingReviews {
+    border-radius: 5px;
+    padding: 5px;
+    width: 30rem;
+    background-color: rgb(247, 242, 247);
+    }
+    
+    #middleReview {
+    margin: 15px 0;
+    }
+    
+    .star {
+    margin: 5px;
+    }
+    
+    .rating {
+    margin-left: 2rem;
+    }
+    
+    .pColor {
+    color: rgb(147, 123, 146);
+    }
+    
+    #profile {
+    align-items: center;
+    }
+    
+    #topReview {
+    right: 8rem;
+    }
+    
+    #middleReview {
+    right: 4rem;
+    } /End Of Box 2/
+    
+    
+    /==========================/
+    /* Start Of Box 3*/
+    /==========================/
+    #bottomBox {
+    font-size: 15px;
+    padding-top: 5rem;
+    }
+    
+    .customerReview {
+    padding: 15px;
+    }
+    
+    #coltonBox, #ireneBox, #anneBox {
+    background-color: rgb(80, 32, 80);
+    border-radius: 15px;
+    width: 340px;
+    height: 215px;
+    }
+    
+    #ireneBox {
+    top: 1rem;
+    }
+    
+    .profilePic {
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 3rem;
+    border-radius: 50%;
+    }
+    
+    .verifiedBuyer {
+    margin-top: 0;
+    color: rgb(238, 104, 164);
+    }
+    
+    .box3Text {
+    margin-bottom: 0;
+    color: rgb(247, 242, 247);
+    }
+    
+    .alignText {
+    text-align: center;
+    } /*End Of Box 3*/
+    
+    
+    /*==========================*/
+    /* Start Of Media Quirie*/
+    /*==========================*/
+    @media screen and (max-width: 376px) {
+    
+    body {
+    background: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    bottom: -3rem;
+    }
+    
+    #topReview, #middleReview, #bottomReview, #wrapper, #box1, #box2, #bottomBox, #topBox {
+    width: 100%;
+    }
+    
+    #topBox, #bottomBox {
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .ratingReviews {
+    flex-direction: column;
+    }
+    
+    .rating {
+    margin-left: 0;
+    }
+    
+    .customerReview {
+    width: 96%;
+    }
+    
+    #topReview, #middleReview {
+    right: 0;
+    }
+    
+    .h1Color {
+    font-size: 38px;
+    }
+    
+    .pColor {
+    width: 84%;
+    margin-left: 34px;
+    }
+    
+    .pColor, .h1Color {
+    text-align: center;
+    }
+    
+    .h1Color {
+    width: 100%;
+    }
+    }/End Of Media Quirie/
