@@ -1,104 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
-    <link rel="icon" href="./images/favicon-32x32.png">
-    <title>Testimonial Layout</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Social Proof Section</title>
+
+  <!-- Google Fonts: League Spartan -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/main.css">
 </head>
-
 <body>
-    <main class="container">
-        <section class="top">
-            <aside class="leftSide">
-                <h1>
-                    <span class="firstLine"><strong>10,000</strong>+ of our</span>
-                    <span class="secondLine">users love our</span>
-                    <span class="thirdLine">products.</span>
-                </h1>
-                <p class="paragraph">
-                    We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.
-                </p>
-            </aside>
-            <aside class="rightSide">
-                <section id="rTop" class="rating">
-                    <div class="stars">
-                        <img src="./images/icon-star.svg" alt="star rating">
-                        <img src="./images/icon-star.svg" alt="star rating">
-                        <img src="./images/icon-star.svg" alt="star rating">
-                        <img src="./images/icon-star.svg" alt="star rating">
-                        <img src="./images/icon-star.svg" alt="star rating">
-                    </div>
-                    <span class="ratingOne">Rated 5 Stars in Reviews</span>
-                </section>
-                <section id="rMiddle" class="rating">
-                    <div class="stars">
-                        <img src="./images/icon-star.svg" alt="star rating">
-                        <img src="./images/icon-star.svg" alt="star rating">
-                        <img src="./images/icon-star.svg" alt="star rating">
-                        <img src="./images/icon-star.svg" alt="star rating">
-                        <img src="./images/icon-star.svg" alt="star rating">
-                    </div>
-                    <span class="ratingTwo">Rated 5 Stars in Report Guru</span>
-                </section>
-                <section id="rBottom" class="rating">
-                    <div class="stars">
-                        <img src="./images/icon-star.svg" alt="star rating">
-                        <img src="./images/icon-star.svg" alt="star rating">
-                        <img src="./images/icon-star.svg" alt="star rating">
-                        <img src="./images/icon-star.svg" alt="star rating">
-                        <img src="./images/icon-star.svg" alt="star rating">
-                    </div>
-                    <span class="ratingThree">Rated 5 Stars in BestTech</span>
-                </section>
-            </aside>
-        </section>
+  <main class="social-proof-wrapper">
+    <div class="social-proof-container">
+      
+      <!-- Top Section: Header & Ratings -->
+      <section class="top-section">
+        <div class="intro-content">
+          <h1 class="intro-title">10,000+ of our users love our products.</h1>
+          <p class="intro-description">
+            We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our services.
+          </p>
+        </div>
 
-        <section class="bottom">
-            <aside class="testimonials userLeft">
-                <div class="userImgName">
-                    <img class="userImg" src="./images/image-colton.jpg" alt="Colton Smith">
-                    <div class="userName">
-                        <span class="name">Colton Smith</span>
-                        <span class="verifiedUser">Verified Buyer</span>
-                    </div>
-                </div>
-                <p class="testimony">
-                    "We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent!"
-                </p>
-            </aside>
-            <aside class="testimonials userMiddle">
-                <div class="userImgName">
-                    <img class="userImg" src="./images/image-irene.jpg" alt="Irene Roberts">
-                    <div class="userName">
-                        <span class="name">Irene Roberts</span>
-                        <span class="verifiedUser">Verified Buyer</span>
-                    </div>
-                </div>
-                <p class="testimony">
-                    "Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery."
-                </p>
-            </aside>
-            <aside class="testimonials userRight">
-                <div class="userImgName">
-                    <img class="userImg" src="./images/image-anne.jpg" alt="Anne Wallace">
-                    <div class="userName">
-                        <span class="name">Anne Wallace</span>
-                        <span class="verifiedUser">Verified Buyer</span>
-                    </div>
-                </div>
-                <p class="testimony">
-                    "Put an order with this company and can only praise them for their very high standard. Will definitely use them again and recommend them to everyone!"
-                </p>
-            </aside>
-        </section>
-    </main>
+        <div class="ratings-container">
+          <div class="rating-pill rating-pill--1">
+            <div class="stars-group" aria-hidden="true">
+              <img src="./images/icon-star.svg" alt="" class="star-icon">
+              <img src="./images/icon-star.svg" alt="" class="star-icon">
+              <img src="./images/icon-star.svg" alt="" class="star-icon">
+              <img src="./images/icon-star.svg" alt="" class="star-icon">
+              <img src="./images/icon-star.svg" alt="" class="star-icon">
+            </div>
+            <p class="rating-text"><strong>Rated 5 Stars</strong> in Reviews</p>
+          </div>
+
+          <div class="rating-pill rating-pill--2">
+            <div class="stars-group" aria-hidden="true">
+              <img src="./images/icon-star.svg" alt="" class="star-icon">
+              <img src="./images/icon-star.svg" alt="" class="star-icon">
+              <img src="./images/icon-star.svg" alt="" class="star-icon">
+              <img src="./images/icon-star.svg" alt="" class="star-icon">
+              <img src="./images/icon-star.svg" alt="" class="star-icon">
+            </div>
+            <p class="rating-text"><strong>Rated 5 Stars</strong> in Report Guru</p>
+          </div>
+
+          <div class="rating-pill rating-pill--3">
+            <div class="stars-group" aria-hidden="true">
+              <img src="./images/icon-star.svg" alt="" class="star-icon">
+              <img src="./images/icon-star.svg" alt="" class="star-icon">
+              <img src="./images/icon-star.svg" alt="" class="star-icon">
+              <img src="./images/icon-star.svg" alt="" class="star-icon">
+              <img src="./images/icon-star.svg" alt="" class="star-icon">
+            </div>
+            <p class="rating-text"><strong>Rated 5 Stars</strong> in BestTech</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom Section: Testimonial Cards -->
+      <section class="testimonials-section">
+        <article class="testimonial-card testimonial-card--1">
+          <div class="card-header">
+            <img src="./images/image-colton.jpg" alt="Colton Smith" class="user-avatar">
+            <div class="user-info">
+              <h2 class="user-name">Colton Smith</h2>
+              <span class="user-status">Verified Buyer</span>
+            </div>
+          </div>
+          <blockquote class="card-quote">
+            &ldquo; We needed the same printed design as the one we had ordered a week prior. Not only did they find the original order, but we also received it in time. Excellent! &rdquo;
+          </blockquote>
+        </article>
+
+        <article class="testimonial-card testimonial-card--2">
+          <div class="card-header">
+            <img src="./images/image-irene.jpg" alt="Irene Roberts" class="user-avatar">
+            <div class="user-info">
+              <h2 class="user-name">Irene Roberts</h2>
+              <span class="user-status">Verified Buyer</span>
+            </div>
+          </div>
+          <blockquote class="card-quote">
+            &ldquo; Customer service is always excellent and very quick turn around. Completely delighted with the simplicity of the purchase and the speed of delivery. &rdquo;
+          </blockquote>
+        </article>
+
+        <article class="testimonial-card testimonial-card--3">
+          <div class="card-header">
+            <img src="./images/image-anne.jpg" alt="Anne Wallace" class="user-avatar">
+            <div class="user-info">
+              <h2 class="user-name">Anne Wallace</h2>
+              <span class="user-status">Verified Buyer</span>
+            </div>
+          </div>
+          <blockquote class="card-quote">
+            &ldquo; Put an order with this company and can only praise them for their very high standard. Will definitely use them again and recommend them to everyone! &rdquo;
+          </blockquote>
+        </article>
+      </section>
+
+    </div>
+  </main>
 </body>
-
 </html>
